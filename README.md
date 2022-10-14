@@ -1,5 +1,5 @@
 # REST-API
- Basic REST-API
+ Basic REST-API with a basic API Requester
 
  ## Getting All Games Data
   ![First](https://github.com/Rekl0w/REST-API/blob/main/img/First.png)

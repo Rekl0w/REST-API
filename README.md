@@ -1,5 +1,6 @@
 # REST-API
- Basic REST-API with a basic API Requester
+ Basic REST-API with a basic API Requester.
+ 
  This code works with 'games.csv' file, you can find the 'games.csv' file in this repository.
 
  ## Getting All Games Data

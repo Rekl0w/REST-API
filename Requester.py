@@ -10,3 +10,6 @@ response3 = requests.post("http://127.0.0.1:5000/Games", json=a)
 
 response4 = requests.get("http://127.0.0.1:5000/FootballManager2022")
 print(response4.json())
+
+response5 = requests.get("http://127.0.0.1:5000/2018")
+print(response5.json())

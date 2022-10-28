@@ -44,12 +44,14 @@ class Games(Resource):
         return {'message' : 'Record deleted successfully.'}, 200
 
 class ReleaseYear(Resource):
-    def get(self):
-        data = pd.read_csv('games.csv',usecols=[2])
+    def get(self,releaseYear):
+        data = pd.read_csv('games.csv')
         data = data.to_dict('records')
-        
-        return {'data' : data}, 200
-
+        for entry in data:
+            if entry['releaseYear'] == releaseYear :
+                return {'data' : entry}, 200
+        return {'message' : 'No entry found with this year !'}, 200
+    
 class Game(Resource):
     def get(self,game):
         data = pd.read_csv('games.csv')
@@ -60,9 +62,10 @@ class Game(Resource):
         return {'message' : 'No entry found with this game !'}, 200
 
 api.add_resource(Games, '/Games')
-api.add_resource(ReleaseYear, '/releaseYear')
+api.add_resource(ReleaseYear, '/<int:releaseYear>')
 api.add_resource(Game, '/<string:game>')
 
 
 if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5000)
     app.run()

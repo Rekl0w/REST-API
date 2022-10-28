@@ -11,7 +11,7 @@
  ![Post](https://github.com/Rekl0w/REST-API/blob/main/img/last.png)
  ## After the Post Request
  ![After](https://github.com/Rekl0w/REST-API/blob/main/img/afterpost.png)
- ## Getting Games Datas By Release Year
+ ## Getting Games Data By Release Year
   ![Year](https://github.com/Rekl0w/REST-API/blob/main/img/year.png) 
  ## API Response After the Post Request 
   ![Response](https://github.com/Rekl0w/REST-API/blob/main/img/apiresponse.png)

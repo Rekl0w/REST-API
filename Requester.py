@@ -18,5 +18,5 @@ print(response5.json())
 response6 = requests.get("http://127.0.0.1:5000/2018")
 print(response6.json())
 
-response7 = requests.get("http://127.0.0.1:5000/number/5")
+response7 = requests.get("http://127.0.0.1:5000/Number/5")
 print(response7.json())

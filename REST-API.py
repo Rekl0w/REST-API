@@ -65,16 +65,16 @@ class Welcome(Resource):
     def get(self):
         return {'message' : 'Welcome to Games Rest Api !'}, 200
     
-class Numbers(Resource):
+class Number(Resource):
     def get(self,number):
         result = number*5
-        return {'message' : result }, 200          
+        return {'result' : result }, 200          
 
 api.add_resource(Welcome, '/')
 api.add_resource(Games, '/Games')
 api.add_resource(ReleaseYear, '/<int:releaseYear>')
 api.add_resource(Game, '/<string:game>')
-api.add_resource(Numbers, '/number/<int:number>')
+api.add_resource(Number, '/Number/<int:number>')
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
